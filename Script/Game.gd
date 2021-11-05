@@ -12,9 +12,15 @@ onready var player = $Player
 
 onready var mid_screen := get_viewport().size / 2
 
+onready var timer = $Timer
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
+
+func _process(delta):
+	if timer.is_stopped() and Input.is_action_just_pressed("ui_accept"):
+		timer.start()
 
 func _on_Timer_timeout():
 	var boomer = Boomer.instance()
