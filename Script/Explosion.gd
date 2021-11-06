@@ -1,21 +1,16 @@
 extends Area2D
+class_name Explosion
 
+onready var tween = $Tween
+onready var sprite = $Sprite
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+const max_scale = 1.5
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	tween.interpolate_property(self, "scale", null, Vector2(max_scale, max_scale), 1, Tween.TRANS_LINEAR, Tween.EASE_IN)
+	tween.interpolate_property(sprite, "modulate:a", null, 0, 1, Tween.TRANS_LINEAR, Tween.EASE_IN)
+	tween.start()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
-func _on_Timer_timeout():
+func _on_AudioStreamPlayer2D_finished():
 	queue_free()
 	pass # Replace with function body.

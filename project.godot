@@ -10,12 +10,24 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Area2D",
+"class": "Boomer",
+"language": "GDScript",
+"path": "res://Script/Boomer.gd"
+}, {
+"base": "Area2D",
 "class": "Bullet",
 "language": "GDScript",
 "path": "res://Script/Bullet.gd"
+}, {
+"base": "Area2D",
+"class": "Explosion",
+"language": "GDScript",
+"path": "res://Script/Explosion.gd"
 } ]
 _global_script_class_icons={
-"Bullet": ""
+"Boomer": "",
+"Bullet": "",
+"Explosion": ""
 }
 
 [application]

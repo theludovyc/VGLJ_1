@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/flaunch.wav-b1d89d222e239e5db768e0e766e2a8b0.sample"
+
+[deps]
+
+source_file="res://Art/flaunch.wav"
+dest_files=[ "res://.import/flaunch.wav-b1d89d222e239e5db768e0e766e2a8b0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -20,3 +20,8 @@ func _process(delta):
 	if !get_viewport_rect().has_point(position):
 		queue_free()
 #	pass
+
+
+func _on_Bullet_area_entered(area:Node):
+	if area.is_in_group("Aliens"):
+		queue_free()

@@ -1,6 +1,9 @@
 extends Area2D
+class_name Boomer
 
-const SPEED = 3
+signal explode
+
+const SPEED = 1
 
 var target:Node2D
 # Declare member variables here. Examples:
@@ -12,10 +15,14 @@ onready var game = get_parent()
 func _ready():
 	pass # Replace with function body.
 
-func explode():
+func pop_explosion():
 	var explo = game.Explosion.instance()
 	explo.position = position
 	game.add_child(explo)
+
+func explode():
+	emit_signal("explode")
+	call_deferred("pop_explosion")
 	queue_free()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,5 +38,6 @@ func _process(delta):
 
 
 func _on_Boomer_area_entered(area):
-	if area is Bullet:
+	if (area is Bullet
+		or area is Explosion):
 		explode()

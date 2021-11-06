@@ -7,7 +7,12 @@ var Bullet = preload("res://Scene/Bullet.tscn")
 # var b = "text"
 const SPEED = 300
 
+const MARGIN = 100
+
+onready var viewport_size:Vector2 = get_viewport_rect().size
+
 onready var timer = $Timer
+onready var audio = $AudioStreamPlayer2D
 
 var firing := false
 
@@ -31,6 +36,9 @@ func _process(delta):
 	
 	look_at(get_global_mouse_position())
 	
+	position.x = clamp(position.x, MARGIN, viewport_size.x - MARGIN)
+	position.y = clamp(position.y, MARGIN, viewport_size.y - MARGIN)
+	
 	if !firing and Input.is_action_just_pressed("mouse_left"):
 		firing = true
 		timer.start()
@@ -40,10 +48,15 @@ func _process(delta):
 		timer.stop()
 #	pass
 
+func pop_bullet():
+	var bullet = Bullet.instance()
+	bullet.position = position
+	bullet.rotation = rotation + rand_range(0, 0.5)
+	get_parent().add_child(bullet)
 
 func _on_Timer_timeout():
 	if firing:
-		var bullet = Bullet.instance()
-		bullet.position = position
-		bullet.rotation = rotation
-		get_parent().add_child(bullet)
+		pop_bullet()
+		pop_bullet()
+		pop_bullet()
+		audio.play()

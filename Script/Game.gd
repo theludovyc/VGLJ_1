@@ -25,10 +25,14 @@ func _process(delta):
 	if timer.is_stopped() and Input.is_action_just_pressed("ui_accept"):
 		timer.start()
 
+func pop_swarm(spaw_point:Vector2):
+	for i in rand_range(1, 3):
+		var boomer = Boomer.instance()
+		boomer.target = player
+		boomer.position = spaw_point + Vector2(rand_range(-32, 32), rand_range(-32, 32))
+		boomer.connect("explode", $Camera2D, "shake")
+		add_child(boomer)
+
 func _on_Timer_timeout():
-	var boomer = Boomer.instance()
-	boomer.target = player
-	var vec = Vector2.RIGHT.rotated(rand_range(0, 2*PI)) * mid_screen.x + mid_screen
-	print(vec)
-	boomer.position = vec
-	add_child(boomer)
+	var vec = Vector2.RIGHT.rotated(rand_range(0, 2*PI)) * mid_screen.x * 1.1 + mid_screen
+	pop_swarm(vec)
