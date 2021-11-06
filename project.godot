@@ -32,8 +32,10 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Top Down Shooter"
-run/main_scene="res://Scene/Game.tscn"
+config/name="A.R.C.A.D.E"
+run/main_scene="res://Scene/Intro.tscn"
+boot_splash/image="res://Asset/splash.png"
+boot_splash/bg_color=Color( 0.12549, 0.145098, 0.192157, 1 )
 config/icon="res://icon.png"
 
 [debug]
@@ -42,8 +44,8 @@ settings/fps/force_fps=60
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=1366
+window/size/height=768
 window/size/resizable=false
 
 [input]
