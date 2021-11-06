@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://asset/Fonts/button.tres" type="DynamicFont" id=1]
 [ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
@@ -233,199 +233,197 @@ tracks/9/keys = {
 resource_name = "2021"
 length = 10.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("Text2021:visible")
+tracks/0/path = NodePath("alien_head:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
+"times": PoolRealArray( 8.5 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
 tracks/1/type = "bezier"
-tracks/1/path = NodePath("Text2021:modulate:r")
+tracks/1/path = NodePath("alien_head:modulate:r")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 5, 10 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 8.5, 9.5 )
 }
 tracks/2/type = "bezier"
-tracks/2/path = NodePath("Text2021:modulate:g")
+tracks/2/path = NodePath("alien_head:modulate:g")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 5, 10 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 8.5, 9.5 )
 }
 tracks/3/type = "bezier"
-tracks/3/path = NodePath("Text2021:modulate:b")
+tracks/3/path = NodePath("alien_head:modulate:b")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 5, 10 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 8.5, 9.5 )
 }
 tracks/4/type = "bezier"
-tracks/4/path = NodePath("Text2021:modulate:a")
+tracks/4/path = NodePath("alien_head:modulate:a")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 5, 10 )
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 8.5, 9.5 )
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("alien_head:visible")
+tracks/5/path = NodePath("alien_head_red_eyes:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 1 ),
+"times": PoolRealArray( 9.5 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
-tracks/6/type = "bezier"
-tracks/6/path = NodePath("alien_head:modulate:r")
+tracks/6/type = "value"
+tracks/6/path = NodePath("alien_head_shadow:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1, 2 )
+"times": PoolRealArray( 8.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 tracks/7/type = "bezier"
-tracks/7/path = NodePath("alien_head:modulate:g")
+tracks/7/path = NodePath("galaxy:modulate:r")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1, 2 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 4, 6 )
 }
 tracks/8/type = "bezier"
-tracks/8/path = NodePath("alien_head:modulate:b")
+tracks/8/path = NodePath("galaxy:modulate:g")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1, 2 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 4, 6 )
 }
 tracks/9/type = "bezier"
-tracks/9/path = NodePath("alien_head:modulate:a")
+tracks/9/path = NodePath("galaxy:modulate:b")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1, 2 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 4, 6 )
 }
-tracks/10/type = "value"
-tracks/10/path = NodePath("alien_head_red_eyes:visible")
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("galaxy:modulate:a")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 4 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0.392157, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 4, 6 )
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("alien_head_shadow:visible")
+tracks/11/path = NodePath("titre:visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 1 ),
+"times": PoolRealArray( 5 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
 }
-tracks/12/type = "bezier"
-tracks/12/path = NodePath("galaxy:modulate:r")
+tracks/12/type = "value"
+tracks/12/path = NodePath("Acronym:visible")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 4, 6 )
+"times": PoolRealArray( 5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 tracks/13/type = "bezier"
-tracks/13/path = NodePath("galaxy:modulate:g")
+tracks/13/path = NodePath("Acronym:modulate:r")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 4, 6 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 10 )
 }
 tracks/14/type = "bezier"
-tracks/14/path = NodePath("galaxy:modulate:b")
+tracks/14/path = NodePath("Acronym:modulate:g")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 4, 6 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 10 )
 }
 tracks/15/type = "bezier"
-tracks/15/path = NodePath("galaxy:modulate:a")
+tracks/15/path = NodePath("Acronym:modulate:b")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0.392157, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 4, 6 )
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 10 )
 }
-tracks/16/type = "value"
-tracks/16/path = NodePath("titre:visible")
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("Acronym:modulate:a")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
 tracks/16/enabled = true
 tracks/16/keys = {
-"times": PoolRealArray( 5 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 10 )
 }
-tracks/17/type = "value"
-tracks/17/path = NodePath("Acronym:visible")
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("titre:modulate:r")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
-"times": PoolRealArray( 5 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 10 )
 }
 tracks/18/type = "bezier"
-tracks/18/path = NodePath("Acronym:modulate:r")
+tracks/18/path = NodePath("titre:modulate:g")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/imported = false
@@ -435,7 +433,7 @@ tracks/18/keys = {
 "times": PoolRealArray( 0, 10 )
 }
 tracks/19/type = "bezier"
-tracks/19/path = NodePath("Acronym:modulate:g")
+tracks/19/path = NodePath("titre:modulate:b")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/imported = false
@@ -445,64 +443,26 @@ tracks/19/keys = {
 "times": PoolRealArray( 0, 10 )
 }
 tracks/20/type = "bezier"
-tracks/20/path = NodePath("Acronym:modulate:b")
+tracks/20/path = NodePath("titre:modulate:a")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/imported = false
 tracks/20/enabled = true
 tracks/20/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 10 )
 }
-tracks/21/type = "bezier"
-tracks/21/path = NodePath("Acronym:modulate:a")
+tracks/21/type = "value"
+tracks/21/path = NodePath("StarWars/RichTextLabel:rect_position")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
 tracks/21/enabled = true
 tracks/21/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 10 )
-}
-tracks/22/type = "bezier"
-tracks/22/path = NodePath("titre:modulate:r")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 10 )
-}
-tracks/23/type = "bezier"
-tracks/23/path = NodePath("titre:modulate:g")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 10 )
-}
-tracks/24/type = "bezier"
-tracks/24/path = NodePath("titre:modulate:b")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 10 )
-}
-tracks/25/type = "bezier"
-tracks/25/path = NodePath("titre:modulate:a")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 10 )
+"times": PoolRealArray( 0, 10 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 51, 629 ), Vector2( 51, -617 ) ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -654,6 +614,46 @@ tracks/8/keys = {
 "points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0.5, 2 )
 }
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("galaxy:modulate:r")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("galaxy:modulate:g")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("galaxy:modulate:b")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("galaxy:modulate:a")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
 
 [sub_resource type="Animation" id=6]
 tracks/0/type = "bezier"
@@ -788,9 +788,54 @@ tracks/12/keys = {
 "points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0 )
 }
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("galaxy:modulate:r")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("galaxy:modulate:g")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("galaxy:modulate:b")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("galaxy:modulate:a")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
 
 [sub_resource type="DynamicFont" id=7]
 size = 25
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 30
 use_filter = true
 font_data = ExtResource( 2 )
 
@@ -820,7 +865,6 @@ __meta__ = {
 }
 
 [node name="alien_head_shadow" type="Sprite" parent="."]
-visible = false
 modulate = Color( 1, 1, 1, 0.443137 )
 position = Vector2( 681.461, 385.284 )
 texture = ExtResource( 6 )
@@ -829,7 +873,6 @@ __meta__ = {
 }
 
 [node name="alien_head" type="Sprite" parent="."]
-visible = false
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 683, 380 )
 texture = ExtResource( 4 )
@@ -838,7 +881,6 @@ __meta__ = {
 }
 
 [node name="alien_head_red_eyes" type="Sprite" parent="."]
-visible = false
 position = Vector2( 683, 380 )
 texture = ExtResource( 8 )
 __meta__ = {
@@ -847,7 +889,9 @@ __meta__ = {
 
 [node name="titre" type="Sprite" parent="."]
 visible = false
-position = Vector2( 284.642, 54.507 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -50, -50 )
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 7 )
 
 [node name="Ballons" type="Node2D" parent="."]
@@ -959,30 +1003,40 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Text2021" type="RichTextLabel" parent="."]
-visible = false
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 152.0
-margin_top = 318.0
-margin_right = 1242.0
-margin_bottom = 606.0
-custom_fonts/normal_font = SubResource( 7 )
-bbcode_text = "Mais loin loin dans une autre galaxie, des moments d'hilarité était provoqués par l'ingestion de l'hélium liquide qui servait à refroidir le capteur radio des ballons de baudruche.... bla bla bla... 
+[node name="StarWars" type="Control" parent="."]
+margin_top = 148.0
+margin_right = 1366.0
+margin_bottom = 765.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
 
-Et ici insérer le super texte qui dis que les méchants aliens en manque de breuvage arrivent sur Terre pour nous défoncer la tête
+[node name="RichTextLabel" type="RichTextLabel" parent="StarWars"]
+margin_left = 51.0
+margin_top = 629.0
+margin_right = 1319.0
+margin_bottom = 1117.0
+custom_fonts/normal_font = SubResource( 9 )
+text = "Dans une galaxie lointaine, très lointaine... des moments d'hilarité était provoqués par l'ingestion d'hélium liquide qui servait à refroidir les capteurs des ballons de baudruche.... bla bla bla...
 
-Et même que le scientifique mat crusher vas leur botter le cul dans la zone d'atterissage!!!! parceque voilà quoi... "
-text = "Mais loin loin dans une autre galaxie, des moments d'hilarité était provoqués par l'ingestion de l'hélium liquide qui servait à refroidir le capteur radio des ballons de baudruche.... bla bla bla... 
 
-Et ici insérer le super texte qui dis que les méchants aliens en manque de breuvage arrivent sur Terre pour nous défoncer la tête
 
-Et même que le scientifique mat crusher vas leur botter le cul dans la zone d'atterissage!!!! parceque voilà quoi... "
+Et ici insérer le texte qui dis que les méchants aliens en manque de breuvages arrivent sur Terre pour nous défoncer la tête...
+
+
+
+Et même que tu es le héro qui vas leur botter le cul dans la zone d'atterissage!!!! 
+
+
+
+Parceque voilà quoi..."
+scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Acronym" type="Label" parent="."]
-visible = false
 margin_left = 18.0109
 margin_top = 96.4111
 margin_right = 1294.01
@@ -994,5 +1048,5 @@ __meta__ = {
 }
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 1.5
 one_shot = true

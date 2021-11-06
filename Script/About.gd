@@ -61,7 +61,8 @@ var credits = [
 	],
 	[
 		"Pour en savoir plus",
-		"https://www.nasa.gov/centers/goddard/news/topstory/2009/arcade_balloon.html",
+		"https://www.nasa.gov/"
+
 	],
 	[
 		"Le Github du jeu",
