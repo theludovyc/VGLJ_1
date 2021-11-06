@@ -27,13 +27,13 @@ func _ready():
 	$AnimationPlayer.play("Title")
 	yield($AnimationPlayer,"animation_finished")
 	
+	# tester si event keyb pour continuer sinon tempo et suite
 	$AnimationPlayer.play("2002")
 	yield($AnimationPlayer,"animation_finished")
 	$Continue.show()
 	
-	# tester si event keyb pour continuer sinon tempo et suite
-	
 	$Continue.hide()
+	# tester si event keyb pour continuer sinon tempo et suite
 	$AnimationPlayer.play("2006")
 	yield($AnimationPlayer,"animation_finished")
 	$AnimationPlayer.play("Ballons")

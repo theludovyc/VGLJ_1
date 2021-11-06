@@ -33,4 +33,4 @@ func _on_Quit_pressed():
 
 
 func _on_Buttonnone_pressed():
-	$MiniAlien.show()
+	$MiniAlien.raleur()

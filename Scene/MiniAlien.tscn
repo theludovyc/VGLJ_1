@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Script/MiniAlien.gd" type="Script" id=1]
+[ext_resource path="res://Asset/bulle.png" type="Texture" id=2]
+[ext_resource path="res://Asset/mini_alien.png" type="Texture" id=3]
+[ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="MiniAlien" type="Control"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mini_alien" type="Sprite" parent="."]
+position = Vector2( 131, 598 )
+texture = ExtResource( 3 )
+
+[node name="bulle" type="Sprite" parent="."]
+position = Vector2( 402, 406 )
+texture = ExtResource( 2 )
+
+[node name="Label_Raleur" type="Label" parent="bulle"]
+margin_left = -157.0
+margin_top = -107.0
+margin_right = 156.0
+margin_bottom = 46.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.239216, 0.219608, 0.27451, 1 )
+text = "Tu es Serieux !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
