@@ -19,6 +19,9 @@ func _ready():
 	pass # Replace with function body.
 
 func _process(delta):
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().quit()
+	
 	if timer.is_stopped() and Input.is_action_just_pressed("ui_accept"):
 		timer.start()
 

@@ -24,6 +24,16 @@ config/name="Top Down Shooter"
 run/main_scene="res://Scene/Game.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/fps/force_fps=60
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+
 [input]
 
 ui_left={
