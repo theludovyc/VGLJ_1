@@ -26,7 +26,7 @@ stream = ExtResource( 4 )
 wait_time = 0.2
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2( 640, 360 )
+offset = Vector2( 683, 384 )
 current = true
 script = ExtResource( 5 )
 
