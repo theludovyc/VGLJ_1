@@ -20,7 +20,7 @@ func _on_Phaser_explode():
 func _on_Timer_timeout():
 	state = 1
 	audio.play()
-	tween.interpolate_property(self, "scale:y", null, 5, 1, Tween.TRANS_EXPO, Tween.EASE_IN)
+	tween.interpolate_property(self, "scale:y", null, 1.5, 1, Tween.TRANS_EXPO, Tween.EASE_IN)
 	tween.start()
 
 func _on_AudioStreamPlayer2D_finished():
