@@ -1,0 +1,122 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://asset/galaxy.png" type="Texture" id=1]
+[ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://asset/titre.png" type="Texture" id=3]
+[ext_resource path="res://Script/Menu.gd" type="Script" id=4]
+[ext_resource path="res://asset/Fonts/button.tres" type="DynamicFont" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1366.0
+margin_bottom = 768.0
+rect_clip_content = true
+color = Color( 0.141176, 0.121569, 0.192157, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="galaxy" type="Sprite" parent="."]
+position = Vector2( 679.378, 390.826 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="titre" type="Sprite" parent="."]
+position = Vector2( 284.642, 54.507 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Acronym" type="Label" parent="."]
+margin_left = 18.0109
+margin_top = 96.4111
+margin_right = 1294.01
+margin_bottom = 131.411
+custom_fonts/font = SubResource( 1 )
+text = "Absolute Radiometer for Cosmology, Astrophysics, and Diffuse Emission"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1366.0
+margin_bottom = 768.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 409.0
+margin_right = 957.0
+margin_bottom = 768.0
+alignment = 1
+
+[node name="Intro" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 288.0
+margin_right = 548.0
+margin_bottom = 323.0
+rect_pivot_offset = Vector2( -565.154, 182.486 )
+custom_fonts/font = ExtResource( 5 )
+text = "Intro si tu as spam ta barre espace"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 327.0
+margin_right = 548.0
+margin_bottom = 362.0
+rect_pivot_offset = Vector2( -565.154, 182.486 )
+custom_fonts/font = ExtResource( 5 )
+text = "jouer si tu as pas peur du défi"
+
+[node name="Buttonnone" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 366.0
+margin_right = 548.0
+margin_bottom = 401.0
+rect_pivot_offset = Vector2( -565.154, 182.486 )
+custom_fonts/font = ExtResource( 5 )
+text = "Sert à rien, mais le graphiste à forcé"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="About" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 405.0
+margin_right = 548.0
+margin_bottom = 440.0
+rect_pivot_offset = Vector2( -565.154, 182.486 )
+custom_fonts/font = ExtResource( 5 )
+text = "A Propos..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 444.0
+margin_right = 548.0
+margin_bottom = 479.0
+rect_pivot_offset = Vector2( -565.154, 182.486 )
+custom_fonts/font = ExtResource( 5 )
+text = "Quitter"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Intro" to="." method="_on_Intro_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/About" to="." method="_on_About_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
