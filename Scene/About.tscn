@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Script/About.gd" type="Script" id=2]
+[ext_resource path="res://asset/galaxy.png" type="Texture" id=3]
+[ext_resource path="res://asset/titre.png" type="Texture" id=4]
+[ext_resource path="res://asset/Fonts/Kenney Future.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 5 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1366.0
+margin_bottom = 768.0
+rect_clip_content = true
+color = Color( 0.141176, 0.121569, 0.192157, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="galaxy" type="Sprite" parent="."]
+position = Vector2( 679.378, 390.826 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="titre" type="Sprite" parent="."]
+position = Vector2( 284.642, 54.507 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Acronym" type="Label" parent="."]
+margin_left = 18.0109
+margin_top = 96.4111
+margin_right = 1294.01
+margin_bottom = 131.411
+custom_fonts/font = SubResource( 1 )
+text = "Absolute Radiometer for Cosmology, Astrophysics, and Diffuse Emission"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="CreditsContainer" type="Control" parent="."]
+margin_top = 142.0
+margin_right = 1366.0
+margin_bottom = 767.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Credit_Line" type="Label" parent="CreditsContainer"]
+margin_top = 623.0
+margin_right = 1366.0
+margin_bottom = 662.0
+custom_fonts/font = SubResource( 2 )
+text = "Credits"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
