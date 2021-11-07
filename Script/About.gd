@@ -28,15 +28,10 @@ var credits = [
 		"Salty64"
 	],[
 		"Graphistes",
-		"Salty64"
+		"Salty64",
+		"Kenney (www.kenney.nl)"
 	],
 	[
-		"Artiste Voix",
-		"Noémie"
-	],[
-		"Musiciens",
-		"Musician Name"
-	],[
 		"Effets sonores",
 		"https://opengameart.org/"
 	],[
