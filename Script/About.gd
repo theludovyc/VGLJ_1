@@ -25,10 +25,10 @@ var credits = [
 	[
 		"Programmeurs",
 		"TheLudovyc",
-		"Salty64"
+		"Salty64 (saltyn)"
 	],[
 		"Graphistes",
-		"Salty64",
+		"Salty64 (saltyn)",
 		"Kenney (www.kenney.nl)"
 	],
 	[
@@ -40,7 +40,7 @@ var credits = [
 	],[
 		"Testeurs",
 		"TheLudovyc",
-		"Salty64",
+		"Salty64 (saltyn)",
 		"Toi! merci d'avoir joué à notre jeu..."
 	],[
 		"Outils utilisés",
