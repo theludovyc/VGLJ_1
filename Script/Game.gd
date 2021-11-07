@@ -10,7 +10,7 @@ var Phaser = preload("res://Scene/Phaser.tscn")
 
 onready var player = $Player
 
-onready var mid_screen := get_viewport().size / 2
+onready var mid_screen := Vector2(1366,768)
 
 onready var timer = $Timer
 onready var timerPhaser = $TimerPhaser
@@ -21,18 +21,19 @@ func _ready():
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().quit()
+#		//get_tree().quit() retour au menu
+		pass
 	
-	if timer.is_stopped() and Input.is_action_just_pressed("ui_accept"):
-		timer.start()
-		timerPhaser.start()
+#	if timer.is_stopped() and Input.is_action_just_pressed("ui_accept"):
+#		timer.start()
+#		timerPhaser.start()
 
 func pop_swarm(spaw_point:Vector2):
 	for i in rand_range(1, 3):
 		var boomer = Boomer.instance()
 		boomer.target = player
 		boomer.position = spaw_point + Vector2(rand_range(-32, 32), rand_range(-32, 32))
-		boomer.connect("explode", $Camera2D, "shake")
+		boomer.connect("explode", $Player/Camera2D, "shake")
 		add_child(boomer)
 
 func _on_Timer_timeout():

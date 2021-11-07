@@ -17,8 +17,11 @@ func _ready():
 func _process(delta):
 	position += Vector2.RIGHT.rotated(rotation) * SPEED
 	
-	if !get_viewport_rect().has_point(position):
+	if (position.x<0) or (position.x>1366*2):
 		queue_free()
+	if (position.y<0) or (position.y>768*2):
+		queue_free()	
+	
 #	pass
 
 
