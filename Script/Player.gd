@@ -13,7 +13,7 @@ onready var viewport_size:Vector2 = get_viewport_rect().size
 
 onready var timer = $Timer
 onready var audio = $AudioStreamPlayer2D
-onready var sprite = $Sprite
+onready var sprite = $AnimatedSprite
 onready var tween = $Tween
 
 var firing := false
