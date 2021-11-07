@@ -14,7 +14,7 @@ func _on_Intro_pressed():
 
 
 func _on_Play_pressed():
-	var __ = get_tree().change_scene("res://Scene/Game.tscn")
+	var __ = get_tree().change_scene("res://Scene/Tuto.tscn")
 
 
 func _on_Quit_pressed():
