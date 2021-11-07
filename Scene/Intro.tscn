@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://asset/Fonts/button.tres" type="DynamicFont" id=1]
 [ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
@@ -835,11 +835,16 @@ use_filter = true
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=8]
-size = 30
+size = 25
 use_filter = true
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=9]
+size = 30
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=10]
 size = 30
 use_filter = true
 font_data = ExtResource( 2 )
@@ -989,7 +994,7 @@ margin_left = 20.9337
 margin_top = 195.303
 margin_right = 851.934
 margin_bottom = 386.303
-custom_fonts/normal_font = SubResource( 7 )
+custom_fonts/normal_font = SubResource( 8 )
 bbcode_text = "Cette énigme radio aurait elle été laissé avant la formation des premières étoiles ?
 
 Pour en savoir plus, les scientifiques lancèrents encore plus de ballons stratosphériques...
@@ -1017,7 +1022,7 @@ margin_left = 51.0
 margin_top = 629.0
 margin_right = 1319.0
 margin_bottom = 1117.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
 text = "Dans une galaxie lointaine, très lointaine... des moments d'hilarité était provoqués par l'ingestion d'hélium liquide qui servait à refroidir les capteurs des ballons de baudruche.... bla bla bla...
 
 
@@ -1041,7 +1046,7 @@ margin_left = 18.0109
 margin_top = 96.4111
 margin_right = 1294.01
 margin_bottom = 131.411
-custom_fonts/font = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
 text = "Absolute Radiometer for Cosmology, Astrophysics, and Diffuse Emission"
 __meta__ = {
 "_edit_use_anchors_": false
