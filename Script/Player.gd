@@ -47,15 +47,16 @@ func _physics_process(delta):
 	
 	position += dir*SPEED*delta
 	
-	look_at(get_global_mouse_position())
+	sprite.look_at(get_global_mouse_position())
+	sprite.rotate(PI/2)
 	
-	position.x = clamp(position.x, MARGIN, viewport_size.x - MARGIN)
-	position.y = clamp(position.y, MARGIN, viewport_size.y - MARGIN)
+	position.x = clamp(position.x, MARGIN, 1366*2-MARGIN)
+	position.y = clamp(position.y, MARGIN, 768*2-MARGIN)
 
 func pop_bullet():
 	var bullet = Bullet.instance()
 	bullet.position = position
-	bullet.rotation = rotation + rand_range(-0.25, 0.25) 
+	bullet.rotation = sprite.rotation + rand_range(-0.25, 0.25) -PI/2
 	get_parent().add_child(bullet)
 
 func _on_Timer_timeout():
