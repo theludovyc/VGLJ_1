@@ -55,7 +55,7 @@ func _physics_process(delta):
 func pop_bullet():
 	var bullet = Bullet.instance()
 	bullet.position = position
-	bullet.rotation = rotation + rand_range(0, 0.5)
+	bullet.rotation = rotation + rand_range(-0.25, 0.25) 
 	get_parent().add_child(bullet)
 
 func _on_Timer_timeout():
