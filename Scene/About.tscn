@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Art/image/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Script/About.gd" type="Script" id=2]
-[ext_resource path="res://asset/galaxy.png" type="Texture" id=3]
-[ext_resource path="res://asset/titre.png" type="Texture" id=4]
-[ext_resource path="res://asset/Fonts/Kenney Future.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Art/image/galaxy.png" type="Texture" id=3]
+[ext_resource path="res://Art/image/titre.png" type="Texture" id=4]
+[ext_resource path="res://Art/image/Fonts/Kenney Future.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30

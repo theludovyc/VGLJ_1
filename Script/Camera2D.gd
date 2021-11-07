@@ -1,6 +1,6 @@
 extends Camera2D
 
-const shake = 20
+#const shake = 20
 
 onready var tween = $Tween
 
