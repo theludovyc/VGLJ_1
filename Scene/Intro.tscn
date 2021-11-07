@@ -834,12 +834,12 @@ size = 25
 use_filter = true
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=9]
+[sub_resource type="DynamicFont" id=8]
 size = 30
 use_filter = true
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=9]
 size = 30
 use_filter = true
 font_data = ExtResource( 2 )
@@ -1017,7 +1017,7 @@ margin_left = 51.0
 margin_top = 629.0
 margin_right = 1319.0
 margin_bottom = 1117.0
-custom_fonts/normal_font = SubResource( 9 )
+custom_fonts/normal_font = SubResource( 8 )
 text = "Dans une galaxie lointaine, très lointaine... des moments d'hilarité était provoqués par l'ingestion d'hélium liquide qui servait à refroidir les capteurs des ballons de baudruche.... bla bla bla...
 
 
@@ -1041,7 +1041,7 @@ margin_left = 18.0109
 margin_top = 96.4111
 margin_right = 1294.01
 margin_bottom = 131.411
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 9 )
 text = "Absolute Radiometer for Cosmology, Astrophysics, and Diffuse Emission"
 __meta__ = {
 "_edit_use_anchors_": false
