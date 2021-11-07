@@ -11,6 +11,10 @@ func _ready():
 	tween.interpolate_property(sprite, "modulate:a", null, 0, 1, Tween.TRANS_LINEAR, Tween.EASE_IN)
 	tween.start()
 
-func _on_AudioStreamPlayer2D_finished():
+#func _on_AudioStreamPlayer2D_finished():
+#
+#	pass # Replace with function body.
+
+
+func _on_Tween_tween_all_completed():
 	queue_free()
-	pass # Replace with function body.

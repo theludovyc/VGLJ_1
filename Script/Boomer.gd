@@ -30,14 +30,10 @@ func _process(delta):
 	look_at(target.position)
 	
 	position += Vector2.RIGHT.rotated(rotation) * SPEED
-	
-	if position.distance_to(target.position) < 60:
-		explode()
-	
-#	pass
-
 
 func _on_Boomer_area_entered(area):
+	if area.name == "Player":
+		explode()
 	if (area is Bullet
 		or area is Explosion):
 		explode()
