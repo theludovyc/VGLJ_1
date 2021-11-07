@@ -72,7 +72,7 @@ func take_damage():
 	$Label.text = str(life)
 	life -= 1
 	if life <= 0:
-		get_tree().quit()
+		var __ = get_tree().change_scene("res://Scene/Fin.tscn")
 
 func _on_Player_area_entered(area):
 	if area is Explosion:
