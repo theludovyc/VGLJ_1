@@ -53,6 +53,7 @@ wait_time = 0.2
 
 [node name="TimerPhaser" type="Timer" parent="."]
 wait_time = 3.0
+
 [connection signal="area_entered" from="Player" to="Player" method="_on_Player_area_entered"]
 [connection signal="timeout" from="Player/Timer" to="Player" method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
