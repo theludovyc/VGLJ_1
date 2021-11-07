@@ -1,13 +1,12 @@
 [gd_scene load_steps=20 format=2]
 
-[ext_resource path="res://asset/Fonts/button.tres" type="DynamicFont" id=1]
-[ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://asset/ballon.png" type="Texture" id=3]
-[ext_resource path="res://asset/alien_head.png" type="Texture" id=4]
-[ext_resource path="res://asset/galaxy.png" type="Texture" id=5]
-[ext_resource path="res://asset/alien_head_shadow.png" type="Texture" id=6]
-[ext_resource path="res://asset/titre.png" type="Texture" id=7]
-[ext_resource path="res://asset/alien_head_red_eyes.png" type="Texture" id=8]
+[ext_resource path="res://Art/image/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Art/image/ballon.png" type="Texture" id=3]
+[ext_resource path="res://Art/image/alien_head.png" type="Texture" id=4]
+[ext_resource path="res://Art/image/galaxy.png" type="Texture" id=5]
+[ext_resource path="res://Art/image/alien_head_shadow.png" type="Texture" id=6]
+[ext_resource path="res://Art/image/titre.png" type="Texture" id=7]
+[ext_resource path="res://Art/image/alien_head_red_eyes.png" type="Texture" id=8]
 [ext_resource path="res://Script/Intro.gd" type="Script" id=9]
 
 [sub_resource type="Animation" id=1]
@@ -834,6 +833,10 @@ size = 25
 use_filter = true
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=11]
+size = 25
+font_data = ExtResource( 2 )
+
 [sub_resource type="DynamicFont" id=8]
 size = 25
 use_filter = true
@@ -975,7 +978,7 @@ margin_left = 824.0
 margin_top = 731.0
 margin_right = 1357.0
 margin_bottom = 760.0
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = SubResource( 11 )
 text = "< Appuyer sur SPACE pour continuer >"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1001,7 +1004,7 @@ Pour en savoir plus, les scientifiques lancèrents encore plus de ballons strato
 "
 text = "Cette énigme radio aurait elle été laissé avant la formation des premières étoiles ?
 
-Pour en savoir plus, les scientifiques lancèrents encore plus de ballons stratosphériques...
+Pour en savoir plus, les scientifiques lancérent encore plus de ballons stratosphériques...
 "
 scroll_active = false
 __meta__ = {
@@ -1021,7 +1024,7 @@ __meta__ = {
 margin_left = 51.0
 margin_top = 629.0
 margin_right = 1319.0
-margin_bottom = 1117.0
+margin_bottom = 1220.0
 custom_fonts/normal_font = SubResource( 9 )
 text = "Dans une galaxie lointaine, très lointaine... des moments d'hilarité était provoqués par l'ingestion d'hélium liquide qui servait à refroidir les capteurs des ballons de baudruche.... bla bla bla...
 
@@ -1031,11 +1034,10 @@ Et ici insérer le texte qui dis que les méchants aliens en manque de breuvages
 
 
 
-Et même que tu es le héro qui vas leur botter le cul dans la zone d'atterissage!!!! 
+Et même que tu es le héro qui vas leur botter le cul dans la zone d’atterrissage!!!!
 
 
-
-Parceque voilà quoi..."
+Parce-que voilà quoi..."
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false

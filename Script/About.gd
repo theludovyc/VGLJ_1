@@ -104,7 +104,7 @@ func finish():
 		finished = true
 		# NOTE: This is called when the credits finish
 		# - Hook up your code to return to the relevant scene here, eg...
-	get_tree().change_scene("res://Scene/Menu.tscn")
+	var __ = get_tree().change_scene("res://Scene/Menu.tscn")
 
 
 func add_line():

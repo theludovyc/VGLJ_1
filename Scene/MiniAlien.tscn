@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Script/MiniAlien.gd" type="Script" id=1]
-[ext_resource path="res://Asset/bulle.png" type="Texture" id=2]
-[ext_resource path="res://Asset/mini_alien.png" type="Texture" id=3]
-[ext_resource path="res://asset/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Art/image/bulle.png" type="Texture" id=2]
+[ext_resource path="res://Art/image/mini_alien.png" type="Texture" id=3]
+[ext_resource path="res://Art/image/Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30

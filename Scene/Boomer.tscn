@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Script/Boomer.gd" type="Script" id=1]
-[ext_resource path="res://Asset/alien_petit.png" type="Texture" id=2]
-[ext_resource path="res://Asset/alien_petit2.png" type="Texture" id=3]
-[ext_resource path="res://Asset/alien_petit1.png" type="Texture" id=4]
-[ext_resource path="res://Asset/alien_petit3.png" type="Texture" id=5]
-[ext_resource path="res://Asset/alien_petit5.png" type="Texture" id=6]
-[ext_resource path="res://Asset/alien_petit4.png" type="Texture" id=7]
+[ext_resource path="res://Art/image/alien_petit.png" type="Texture" id=2]
+[ext_resource path="res://Art/image/alien_petit2.png" type="Texture" id=3]
+[ext_resource path="res://Art/image/alien_petit1.png" type="Texture" id=4]
+[ext_resource path="res://Art/image/alien_petit3.png" type="Texture" id=5]
+[ext_resource path="res://Art/image/alien_petit5.png" type="Texture" id=6]
+[ext_resource path="res://Art/image/alien_petit4.png" type="Texture" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

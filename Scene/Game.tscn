@@ -1,15 +1,15 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Asset/hero1.png" type="Texture" id=1]
+[ext_resource path="res://Art/image/hero1.png" type="Texture" id=1]
 [ext_resource path="res://Script/Player.gd" type="Script" id=2]
 [ext_resource path="res://Script/Game.gd" type="Script" id=3]
 [ext_resource path="res://Art/slimeball.wav" type="AudioStream" id=4]
 [ext_resource path="res://Script/Camera2D.gd" type="Script" id=5]
-[ext_resource path="res://Asset/fond.png" type="Texture" id=6]
-[ext_resource path="res://Asset/map.png" type="Texture" id=7]
-[ext_resource path="res://Asset/hero2.png" type="Texture" id=8]
-[ext_resource path="res://Asset/hero3.png" type="Texture" id=9]
-[ext_resource path="res://Asset/alien_soucoupe.png" type="Texture" id=10]
+[ext_resource path="res://Art/image/fond.png" type="Texture" id=6]
+[ext_resource path="res://Art/image/map.png" type="Texture" id=7]
+[ext_resource path="res://Art/image/hero2.png" type="Texture" id=8]
+[ext_resource path="res://Art/image/hero3.png" type="Texture" id=9]
+[ext_resource path="res://Art/image/alien_soucoupe.png" type="Texture" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
