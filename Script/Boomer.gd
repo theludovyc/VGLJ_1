@@ -3,7 +3,7 @@ class_name Boomer
 
 signal explode
 
-const SPEED = 1
+const SPEED = 2
 
 var target:Node2D
 # Declare member variables here. Examples:
@@ -16,7 +16,7 @@ func _ready():
 	pass # Replace with function body.
 
 func pop_explosion():
-	var explo = game.Explosion.instance()
+	var explo = game.Splash.instance()
 	explo.position = position
 	game.add_child(explo)
 
@@ -34,6 +34,5 @@ func _process(delta):
 func _on_Boomer_area_entered(area):
 	if area.name == "Player":
 		explode()
-	if (area is Bullet
-		or area is Explosion):
+	if (area is Bullet):
 		explode()

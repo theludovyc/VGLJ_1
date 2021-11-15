@@ -45,7 +45,7 @@ func _on_Timer_timeout():
 	state = 0
 
 func pop_explosion():
-	var explo = game.Explosion.instance()
+	var explo = game.Splash.instance()
 	explo.position = position
 	game.add_child(explo)
 
@@ -55,8 +55,7 @@ func explode():
 	queue_free()
 
 func _on_Phaser_area_entered(area):
-	if (area is Bullet
-		or area is Explosion):
+	if (area is Bullet):
 		life -= 1
 		if life < 0:
 			explode()

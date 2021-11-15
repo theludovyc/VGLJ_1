@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Script/Splash.gd" type="Script" id=1]
+[ext_resource path="res://Art/image/alien_petit_dead.png" type="Texture" id=2]
+
+[node name="Splash" type="Sprite"]
+position = Vector2( 0, 0.33371 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+autoplay = true
+
+[node name="Tween" type="Tween" parent="."]

@@ -76,5 +76,5 @@ func take_damage():
 		var __ = get_tree().change_scene("res://Scene/Fin.tscn")
 
 func _on_Player_area_entered(area):
-	if area is Explosion:
+	if area is Splash:
 		take_damage()

@@ -833,21 +833,21 @@ size = 25
 use_filter = true
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=11]
-size = 25
-font_data = ExtResource( 2 )
-
 [sub_resource type="DynamicFont" id=8]
 size = 25
-use_filter = true
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=9]
-size = 30
+size = 25
 use_filter = true
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=10]
+size = 30
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=11]
 size = 30
 use_filter = true
 font_data = ExtResource( 2 )
@@ -978,7 +978,7 @@ margin_left = 824.0
 margin_top = 731.0
 margin_right = 1357.0
 margin_bottom = 760.0
-custom_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 8 )
 text = "< Appuyer sur SPACE pour continuer >"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -997,14 +997,14 @@ margin_left = 20.9337
 margin_top = 195.303
 margin_right = 851.934
 margin_bottom = 386.303
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
 bbcode_text = "Cette énigme radio aurait elle été laissé avant la formation des premières étoiles ?
 
 Pour en savoir plus, les scientifiques lancèrents encore plus de ballons stratosphériques...
 "
 text = "Cette énigme radio aurait elle été laissé avant la formation des premières étoiles ?
 
-Pour en savoir plus, les scientifiques lancérent encore plus de ballons stratosphériques...
+Pour en savoir plus, les scientifiques lancèrents encore plus de ballons stratosphériques...
 "
 scroll_active = false
 __meta__ = {
@@ -1025,7 +1025,7 @@ margin_left = 51.0
 margin_top = 629.0
 margin_right = 1319.0
 margin_bottom = 1220.0
-custom_fonts/normal_font = SubResource( 9 )
+custom_fonts/normal_font = SubResource( 10 )
 text = "Dans une galaxie lointaine, très lointaine... des moments d'hilarité était provoqués par l'ingestion d'hélium liquide qui servait à refroidir les capteurs des ballons de baudruche.... bla bla bla...
 
 
@@ -1048,7 +1048,7 @@ margin_left = 18.0109
 margin_top = 96.4111
 margin_right = 1294.01
 margin_bottom = 131.411
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 11 )
 text = "Absolute Radiometer for Cosmology, Astrophysics, and Diffuse Emission"
 __meta__ = {
 "_edit_use_anchors_": false
